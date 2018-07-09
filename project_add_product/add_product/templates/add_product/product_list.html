@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	
+<h1>List of Products:</h1>
+<br>
+
+<h4> - Click on Product to Edit - </h4>
+
+{% for product in products %}
+<div>
+<p> <a href="product/{{product.id}}" style="text-decoration:none;">{{product.name}}</a></p>
+</div>
+{% endfor %}
+
+
+<br>
+<p>
+	<a href="product/new"> Add New Product </a>
+</p>
+
+<br>
+<p>
+	<a href="sendemail"> SEND EMAIL </a>
+</p>
+
+</body>
+</html>

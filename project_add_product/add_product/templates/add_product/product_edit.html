@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1>Edit Product Form:</h1>
+<br>
+
+
+
+<form method="post" class="post_form">
+	{% csrf_token %}
+
+	{{form.as_p}}  
+
+	<button type="submit" class="save data"> Save Edit </button>
+
+</form>
+
+
+<p>
+	<a href="/product/{{product_key}}"> Cancel </a>
+</p>
+
+
+</body>
+</html>
